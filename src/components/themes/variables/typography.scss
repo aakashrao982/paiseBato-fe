@@ -1,0 +1,66 @@
+@use '../../themes/variables/aws.scss' as variables;
+
+@font-face {
+  font-family: 'Assistant';
+  font-style: normal;
+  font-display: swap;
+  src: url(variables.$S3_URL + '/fonts/Assistant-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  font-style: normal;
+  font-display: swap;
+  src: url(variables.$S3_URL + '/fonts/Inter-Regular.ttf') format('ttf');
+}
+
+// Font family
+
+$fontFamily: 'Assistant', sans-serif;
+
+$fontFamilyInterRegular: 'Inter-Regular', sans-serif;
+
+// Font Style
+
+$fontStyle: normal;
+
+// Letter Spacing
+
+$letterSpacing: 0rem;
+
+// Font Weight
+
+$fontWeightLight: 300;
+$fontWeightRegular: 400;
+$fontWeightMedium: 500;
+$fontWeightSemibold: 600;
+$fontWeightBold: 700;
+
+// Font Size
+
+$fontSizeDisplayLg: 4rem; // 64px
+$fontSizeDisplayMd: 3rem; // 48px
+$fontSizeDisplaySm: 2.25rem; // 36px
+
+$fontSizeTextXl: 1.5rem; // 24px
+$fontSizeTextLg: 1.25rem; // 20px
+$fontSizeTextMdLg: 1.125rem; // 18px
+$fontSizeTextMd: 1rem; // 16px
+$fontSizeTextSm: 0.875rem; // 14px
+$fontSizeTextXs: 0.75rem; // 12px
+$fontSizeTextXsCaps: 0.75rem; // 12px
+
+// Line Height
+
+$lineHeightDisplayLg: 4.875rem; // 78px
+$lineHeightDisplayMd: 3.625rem; // 58px
+$lineHeightDisplaySm: 2.75rem; // 44px
+
+$lineHeightTextXl: 2.25rem; // 36px
+$lineHeightTextLg: 1.875rem; // 30px
+$lineHeightTextMdLg: 1.6875rem; // 27px
+$lineHeightTextMd: 1.5rem; // 24px
+$lineHeightTextSm: 1.3125rem; // 21px
+$lineHeightTextXs: 1.125rem; // 18px
+$lineHeightTextXsCaps: 1.125rem; // 18px
+$lineHeightTextXXs: 0.75rem; // 12px;

@@ -1,0 +1,17 @@
+export declare const footerShadow: string;
+export declare const innerShadowIcon: string;
+export declare const ringBrandShadowXs: string;
+export declare const ringErrorShadowXs: string;
+export declare const ringGrayShadowXs: string;
+export declare const ringGreenShadowXs: string;
+export declare const shadow2Xl: string;
+export declare const shadow3Xl: string;
+export declare const shadowBottomsheet: string;
+export declare const shadowCard: string;
+export declare const shadowIcon: string;
+export declare const shadowLg: string;
+export declare const shadowMd: string;
+export declare const shadowSm: string;
+export declare const shadowXl: string;
+export declare const shadowXs: string;
+export declare const shawdowFocusRing: string;

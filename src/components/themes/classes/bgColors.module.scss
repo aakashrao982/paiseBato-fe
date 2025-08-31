@@ -1,0 +1,262 @@
+@use '../variables/colors.scss' as colors;
+
+.bgPrimary50 {
+  background-color: colors.$primary50;
+}
+.bgPrimary100 {
+  background-color: colors.$primary100;
+}
+.bgPrimary200 {
+  background-color: colors.$primary200;
+}
+.bgPrimary300 {
+  background-color: colors.$primary300;
+}
+.bgPrimary400 {
+  background-color: colors.$primary400;
+}
+.bgPrimary500 {
+  background-color: colors.$primary500;
+}
+.bgPrimary600 {
+  background-color: colors.$primary600;
+}
+.bgPrimary700 {
+  background-color: colors.$primary700;
+}
+.bgPrimary800 {
+  background-color: colors.$primary800;
+}
+.bgPrimary900 {
+  background-color: colors.$primary900;
+}
+.bgPrimaryBase {
+  background-color: colors.$primaryBase;
+}
+
+// secondory background
+.bgSecondary50 {
+  background-color: colors.$secondary50;
+}
+.bgSecondary100 {
+  background-color: colors.$secondary100;
+}
+.bgSecondary200 {
+  background-color: colors.$secondary200;
+}
+.bgSecondary300 {
+  background-color: colors.$secondary300;
+}
+.bgSecondary400 {
+  background-color: colors.$secondary400;
+}
+.bgSecondary500 {
+  background-color: colors.$secondary500;
+}
+.bgSecondary600 {
+  background-color: colors.$secondary600;
+}
+.bgSecondary700 {
+  background-color: colors.$secondary700;
+}
+.bgSecondary800 {
+  background-color: colors.$secondary800;
+}
+.bgSecondary900 {
+  background-color: colors.$secondary900;
+}
+.bgSecondaryBase {
+  background-color: colors.$secondaryBase;
+}
+
+// blue background
+.bgBlue50 {
+  background-color: colors.$blue50;
+}
+.bgBlue100 {
+  background-color: colors.$blue100;
+}
+.bgBlue200 {
+  background-color: colors.$blue200;
+}
+.bgBlue300 {
+  background-color: colors.$blue300;
+}
+.bgBlue400 {
+  background-color: colors.$blue400;
+}
+.bgBlue500 {
+  background-color: colors.$blue500;
+}
+.bgBlue600 {
+  background-color: colors.$blue600;
+}
+.bgBlue700 {
+  background-color: colors.$blue700;
+}
+.bgBlue800 {
+  background-color: colors.$blue800;
+}
+.bgBlue900 {
+  background-color: colors.$blue900;
+}
+.bgBlueBase {
+  background-color: colors.$blueBase;
+}
+
+// gray background
+.bgGray50 {
+  background-color: colors.$gray50;
+}
+.bgGray100 {
+  background-color: colors.$gray100;
+}
+.bgGray200 {
+  background-color: colors.$gray200;
+}
+.bgGray300 {
+  background-color: colors.$gray300;
+}
+.bgGray400 {
+  background-color: colors.$gray400;
+}
+.bgGray500 {
+  background-color: colors.$gray500;
+}
+.bgGray600 {
+  background-color: colors.$gray600;
+}
+.bgGray700 {
+  background-color: colors.$gray700;
+}
+.bgGray800 {
+  background-color: colors.$gray800;
+}
+.bgGray900 {
+  background-color: colors.$gray900;
+}
+.bgGrayBase {
+  background-color: colors.$grayBase;
+}
+
+// Error background
+.bgError50 {
+  background-color: colors.$error50;
+}
+.bgError100 {
+  background-color: colors.$error100;
+}
+.bgError200 {
+  background-color: colors.$error200;
+}
+.bgError300 {
+  background-color: colors.$error300;
+}
+.bgError400 {
+  background-color: colors.$error400;
+}
+.bgError500 {
+  background-color: colors.$error500;
+}
+.bgError600 {
+  background-color: colors.$error600;
+}
+.bgError700 {
+  background-color: colors.$error700;
+}
+.bgError800 {
+  background-color: colors.$error800;
+}
+.bgError900 {
+  background-color: colors.$error900;
+}
+.bgErrorBase {
+  background-color: colors.$errorBase;
+}
+
+// Warning background
+.bgWarning50 {
+  background-color: colors.$warning50;
+}
+.bgWarning100 {
+  background-color: colors.$warning100;
+}
+.bgWarning200 {
+  background-color: colors.$warning200;
+}
+.bgWarning300 {
+  background-color: colors.$warning300;
+}
+.bgWarning400 {
+  background-color: colors.$warning400;
+}
+.bgWarning500 {
+  background-color: colors.$warning500;
+}
+.bgWarning600 {
+  background-color: colors.$warning600;
+}
+.bgWarning700 {
+  background-color: colors.$warning700;
+}
+.bgWarning800 {
+  background-color: colors.$warning800;
+}
+.bgWarning900 {
+  background-color: colors.$warning900;
+}
+.bgWarningBase {
+  background-color: colors.$warningBase;
+}
+
+// Success background
+.bgSuccess50 {
+  background-color: colors.$success50;
+}
+.bgSuccess100 {
+  background-color: colors.$success100;
+}
+.bgSuccess200 {
+  background-color: colors.$success200;
+}
+.bgSuccess300 {
+  background-color: colors.$success300;
+}
+.bgSuccess400 {
+  background-color: colors.$success400;
+}
+.bgSuccess500 {
+  background-color: colors.$success500;
+}
+.bgSuccess600 {
+  background-color: colors.$success600;
+}
+.bgSuccess700 {
+  background-color: colors.$success700;
+}
+.bgSuccess800 {
+  background-color: colors.$success800;
+}
+.bgSuccess900 {
+  background-color: colors.$success900;
+}
+.bgSuccessBase {
+  background-color: colors.$successBase;
+}
+
+.bgDecorativePink {
+  background-color: colors.$decorativePink;
+}
+.bgDecorativeRoyalBlue {
+  background-color: colors.$decorativeRoyalBlue;
+}
+.bgDecorativeBannerGradient {
+  background: colors.$decorativeBannerGradient;
+}
+
+.bgNeutralWhite {
+  background-color: colors.$neutralWhite;
+}
+.bgNeutralBlack {
+  background-color: colors.$neutralBlack;
+}

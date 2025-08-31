@@ -1,0 +1,132 @@
+@use '../themes/variables/colors.scss' as colors;
+
+:root {
+  --primary-base: #{colors.$primary600};
+  --primary-700: #{colors.$primary700};
+  --primary-600: #{colors.$primary600};
+  --primary-500: #{colors.$primary500};
+  --primary-400: #{colors.$primary400};
+  --primary-200: #{colors.$primary200};
+  --primary-100: #{colors.$primary100};
+  --primary-50: #{colors.$primary50};
+
+  --text-color: #{colors.$neutralWhite}; // primary-button text color
+  --background-base: #{colors.$primary50}; // applied on background like country list (home page), baseComponent(Pricing page)
+  --background-base-border: #{colors.$primary300};
+  --shadow-color: rgba(217, 83, 30, 0.24); //  shadow color for checkbox hover
+}
+
+// don't update root color, it is reflecting all components
+// Please sync up with root and primary theme
+
+[data-theme='primary'] {
+  --primary-base: #{colors.$primary600};
+  --primary-700: #{colors.$primary700};
+  --primary-600: #{colors.$primary600};
+  --primary-500: #{colors.$primary500};
+  --primary-400: #{colors.$primary400};
+  --primary-200: #{colors.$primary200};
+  --primary-100: #{colors.$primary100};
+  --primary-50: #{colors.$primary50};
+
+  --text-color: #{colors.$neutralWhite};
+  --background-base: #{colors.$primary50};
+  --background-base-border: #{colors.$primary300};
+  --shadow-color: rgba(217, 83, 30, 0.24);
+}
+
+[data-theme='green'] {
+  --primary-base: #{colors.$green600};
+  --primary-700: #{colors.$green700};
+  --primary-600: #{colors.$green600};
+  --primary-500: #{colors.$green500};
+  --primary-400: #{colors.$green400};
+  --primary-200: #{colors.$green200};
+  --primary-100: #{colors.$green100};
+  --primary-50: #{colors.$green50};
+
+  --text-color: #{colors.$main-bg-color};
+  --background-base: #{colors.$yellow100};
+  --background-base-border: #{colors.$yellow100};
+  --shadow-color: rgba(31, 145, 136, 0.24);
+}
+
+[data-theme='lmdc-green'] {
+  --primary-base: #{colors.$lmdc-green600};
+  --primary-700: #{colors.$lmdc-green700};
+  --primary-600: #{colors.$lmdc-green600};
+  --primary-500: #{colors.$lmdc-green500};
+  --primary-400: #{colors.$lmdc-green400};
+  --primary-200: #{colors.$lmdc-green200};
+  --primary-100: #{colors.$lmdc-green100};
+  --primary-50: #{colors.$lmdc-green50};
+
+  --text-color: #{colors.$main-bg-color};
+  --background-base: #{colors.$lmdc-green150};
+  --background-base-border: #{colors.$lmdc-green150};
+  --shadow-color: rgba(31, 145, 136, 0.24);
+}
+
+[data-theme='lbnm-blue'] {
+  --primary-base: #{colors.$lbnm-blue600};
+  --primary-700: #{colors.$lbnm-blue700};
+  --primary-600: #{colors.$lbnm-blue600};
+  --primary-500: #{colors.$lbnm-blue500};
+  --primary-400: #{colors.$lbnm-blue400};
+  --primary-200: #{colors.$lbnm-blue200};
+  --primary-100: #{colors.$lbnm-blue100};
+  --primary-50: #{colors.$lbnm-blue50};
+
+  --text-color: #{colors.$main-bg-color};
+  --background-base: #{colors.$lbnm-blue150};
+  --background-base-border: #{colors.$lbnm-blue150};
+  --shadow-color: rgba(31, 145, 136, 0.24);
+}
+
+[data-theme='nmcb-green'] {
+  --primary-base: #{colors.$nmcb-green600};
+  --primary-700: #{colors.$nmcb-green700};
+  --primary-600: #{colors.$nmcb-green600};
+  --primary-500: #{colors.$nmcb-green500};
+  --primary-400: #{colors.$nmcb-green400};
+  --primary-200: #{colors.$nmcb-green200};
+  --primary-100: #{colors.$nmcb-green100};
+  --primary-50: #{colors.$nmcb-green50};
+
+  --text-color: #{colors.$main-bg-color};
+  --background-base: #{colors.$nmcb-green150};
+  --background-base-border: #{colors.$nmcb-green150};
+  --shadow-color: rgba(31, 145, 136, 0.24);
+}
+
+[data-theme='mcm-blue'] {
+  --primary-base: #{colors.$mcm-blue600};
+  --primary-700: #{colors.$mcm-blue700};
+  --primary-600: #{colors.$mcm-blue600};
+  --primary-500: #{colors.$mcm-blue500};
+  --primary-400: #{colors.$mcm-blue400};
+  --primary-200: #{colors.$mcm-blue200};
+  --primary-100: #{colors.$mcm-blue100};
+  --primary-50: #{colors.$mcm-blue50};
+
+  --text-color: #{colors.$main-bg-color};
+  --background-base: #{colors.$mcm-blue150};
+  --background-base-border: #{colors.$mcm-blue150};
+  --shadow-color: rgba(31, 145, 136, 0.24);
+}
+
+[data-theme='brown'] {
+  --primary-base: #{colors.$brown600};
+  --primary-700: #{colors.$brown700};
+  --primary-600: #{colors.$brown600};
+  --primary-500: #{colors.$brown500};
+  --primary-400: #{colors.$brown400};
+  --primary-200: #{colors.$brown200};
+  --primary-100: #{colors.$brown100};
+  --primary-50: #{colors.$brown50};
+
+  --text-color: #{colors.$main-bg-color};
+  --background-base: #{colors.$brown100};
+  --background-base-border: #{colors.$brown100};
+  --shadow-color: rgba(217, 83, 30, 0.24);
+}

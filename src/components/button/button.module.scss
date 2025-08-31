@@ -1,0 +1,194 @@
+@use "../themes/variables/spacing.scss" as spacing;
+@use "../themes/variables/radius.scss" as radius;
+@use "../themes/variables/colors.scss" as colors;
+@use "../themes/variables/typography.scss" as typography;
+@import "../themes/classes/shadows.module.scss";
+@import "../themes/classes/typography.module.scss";
+
+.buttonContainer {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: radius.$radiusMd;
+  text-decoration: none;
+  cursor: pointer;
+
+  .buttonText {
+    @extend .textMdBold;
+  }
+  &.extraSmall {
+    @extend .textSmSemibold;
+    padding: spacing.$space4 spacing.$space8;
+    gap: spacing.$spaceXs;
+  }
+  &.small {
+    @extend .textSmBold;
+    padding: spacing.$spaceMd spacing.$spaceLg;
+    gap: spacing.$spaceXs;
+  }
+
+  &.medium {
+    @extend .textSmBold;
+    padding: spacing.$space10 spacing.$space14;
+    gap: spacing.$spaceXs;
+  }
+
+  &.large {
+    @extend .textMdBold;
+    padding: spacing.$space10 spacing.$spaceXl;
+    gap: spacing.$spaceSm;
+  }
+
+  &.extraLarge {
+    @extend .textMdBold;
+    padding: spacing.$spaceLg spacing.$space18;
+    gap: spacing.$spaceSm;
+  }
+
+  &.doubleExtraLarge {
+    @extend .textMdLgBold;
+    padding: spacing.$spaceXl spacing.$space22;
+    gap: spacing.$space10;
+  }
+
+  &.primary {
+    @extend .shadowXs;
+    background-color: colors.$primaryBase;
+    border: 1px solid colors.$primaryBase;
+    cursor: pointer;
+
+    .buttonText {
+      color: var(--text-color);
+    }
+
+    &:hover {
+      background-color: colors.$primary700;
+    }
+
+    &:active {
+      @extend .ringBrandShadowXs;
+      background-color: colors.$primaryBase;
+    }
+
+    &:disabled {
+      background-color: colors.$gray100;
+      border: 1px solid colors.$gray400;
+      box-shadow: none;
+      cursor: not-allowed !important;
+
+      .buttonText {
+        color: colors.$gray600;
+      }
+    }
+  }
+
+  &.secondary {
+    @extend .shadowXs;
+    background-color: colors.$neutralWhite;
+    border: 1px solid colors.$gray400;
+    cursor: pointer;
+
+    .buttonText {
+      color: colors.$neutralBlack;
+    }
+
+    &:hover {
+      background-color: colors.$gray100;
+    }
+
+    &:active {
+      @extend .ringGrayShadowXs;
+      background-color: colors.$neutralWhite;
+    }
+
+    &:disabled {
+      background-color: colors.$neutralWhite;
+      border: 1px solid colors.$gray200;
+      box-shadow: none;
+      cursor: not-allowed !important;
+
+      .buttonText {
+        color: colors.$gray600;
+      }
+    }
+  }
+
+  &.tertiary {
+    background-color: colors.$neutralWhite;
+    border: none;
+    cursor: pointer;
+
+    .buttonText {
+      color: colors.$neutralBlack;
+    }
+
+    &:hover {
+      background-color: colors.$gray100;
+    }
+
+    &:active {
+      background-color: colors.$neutralWhite;
+      border: none;
+    }
+
+    &:disabled {
+      background-color: colors.$neutralWhite;
+      border: none;
+      box-shadow: none;
+      cursor: not-allowed !important;
+
+      .buttonText {
+        color: colors.$gray600;
+      }
+    }
+  }
+
+  &.neutral {
+    @extend .shadowXs;
+    background-color: colors.$neutralWhite;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    .buttonText {
+      color: colors.$neutralBlack;
+    }
+    &:active {
+      @extend .ringGrayShadowXs;
+      background-color: colors.$neutralWhite;
+    }
+
+    &:disabled {
+      background-color: colors.$neutralWhite;
+      box-shadow: none;
+      cursor: not-allowed !important;
+
+      .buttonText {
+        color: colors.$gray600;
+      }
+    }
+  }
+
+  &.link {
+    background-color: transparent;
+    color: colors.$blueBase;
+    cursor: pointer;
+    .buttonText {
+      color: colors.$blueBase;
+      font-size: 0.9rem;
+    }
+  }
+
+  &.linkDisableContainer {
+    background-color: transparent;
+    cursor: not-allowed !important;
+    color: colors.$gray600;
+    .buttonText {
+      color: colors.$gray600;
+    }
+  }
+
+  &.linkOnlyText {
+    padding: spacing.$space10 spacing.$space1;
+  }
+}

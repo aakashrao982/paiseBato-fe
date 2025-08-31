@@ -1,0 +1,284 @@
+/**
+* primary color
+*/
+$primary50: #fff1eb;
+$primary100: #ffe0d4;
+$primary200: #f7ddd2;
+$primary300: #f0baa5;
+$primary400: #e89878;
+$primary500: #e1754b;
+$primary600: #d9531e;
+$primary700: #ae4218;
+$primary800: #823212;
+$primary900: #57210c;
+$primaryBase: $primary600;
+
+/**
+* secondory color
+*/
+$secondary50: #e9f4f3;
+$secondary100: #d2e9e7;
+$secondary200: #a5d3cf;
+$secondary300: #79bdb8;
+$secondary400: #4ca7a0;
+$secondary500: #1f9188;
+$secondary600: #19746d;
+$secondary700: #135752;
+$secondary800: #0c3a36;
+$secondary900: #061d1b;
+$secondaryBase: $secondary500;
+
+/**
+* blue color
+*/
+$blue50: #eff7ff;
+$blue100: #d5e9fe;
+$blue200: #abd3fd;
+$blue300: #82bcfc;
+$blue400: #58a6fb;
+$blue500: #2e90fa;
+$blue600: #2573c8;
+$blue700: #1c5696;
+$blue800: #123a64;
+$blue900: #091d32;
+$blueBase: $blue500;
+$trueProfileBlue: #034465;
+
+/**
+* neutral color
+*/
+$decorativePink: #a12e69;
+$decorativeRoyalBlue: #035e8d;
+$decorativeBannerGradient: linear-gradient(
+  180deg,
+  #e1754b 0%,
+  #fc8f65 48.5%,
+  #e1754b 100%
+);
+
+$decorativeUpsellGradient: linear-gradient(
+  90deg,
+  #f5f1ff 3.89%,
+  #ffe0d4 102.07%
+);
+/**
+* decorative color
+*/
+$neutralWhite: #fff;
+$neutralBlack: #292929;
+
+/**
+* gray color
+*/
+$gray50: #fafafa;
+$gray100: #f5f5f5;
+$gray200: #ebebeb;
+$gray300: #e0e0e0;
+$gray400: #d6d6d6;
+$gray500: #cccccc;
+$gray600: #a3a3a3;
+$gray650: #838383;
+$gray700: #7a7a7a;
+$gray800: #525252;
+$gray900: #292929;
+$grayscaleBlack: #000000;
+$grayBase: $gray500;
+
+/**
+* error color
+*/
+$error50: #fff0ee;
+$error100: #fcdad7;
+$error200: #f9b4af;
+$error300: #f68f88;
+$error400: #f36960;
+$error500: #f04438;
+$error600: #c0362d;
+$error700: #902922;
+$error800: #601b16;
+$error900: #300e0b;
+$errorBase: $error500;
+
+/**
+* warning color
+*/
+$warning50: #fef4e7;
+$warning100: #fde9ce;
+$warning200: #fcd39d;
+$warning300: #fabc6b;
+$warning400: #f9a63a;
+$warning500: #f79009;
+$warning600: #c67307;
+$warning700: #945605;
+$warning800: #633a04;
+$warning900: #311d02;
+$warningBase: $warning500;
+
+/**
+* success color
+*/
+$success50: #effff7;
+$success100: #d0f1e1;
+$success200: #a0e2c3;
+$success300: #71d4a6;
+$success400: #41c588;
+$success500: #12b76a;
+$success600: #0e9255;
+$success700: #0b6e40;
+$success800: #07492a;
+$success900: #042515;
+$successBase: #12b76a;
+
+/**
+* text
+*/
+
+$textplaceholder: #667085;
+
+/**
+* border color
+*/
+$borderSecondary: #eaecf0;
+$primaryFlameBase: #d8531e;
+$buttonSecondaryBorder: #d0d5dd;
+
+/** 
+* text color
+*/
+
+$textPrimary900: #101828;
+
+$overlay70Percent: #ffffffb0;
+
+$textSecondary700: #344054;
+
+$textTertiary600: #475467;
+
+$transparent80: #00000033;
+
+$alphaWhite90: rgba(255, 255, 255, 0.9);
+
+$alphaWhite30: rgba(255, 255, 255, 0.3);
+$alphaBlack70: rgba(29, 29, 29, 0.7);
+$alphaBlack40: rgba(0, 0, 0, 0.04);
+$alphawarn60: rgba(198, 115, 7, 0.6);
+
+$backgroundOverlayBlur: rgba(0, 0, 0, 0.7);
+
+$decorativeAccountGradient: linear-gradient(180deg, #ffede6 0%, #fff 100%);
+
+$main-bg-color: #ffffff;
+$decorativeBackgroundGradient: linear-gradient(
+  180deg,
+  var(--background-base) 0%,
+  #fff 100%
+);
+
+/**
+* Client Green color
+*/
+$green50: #e0fff2;
+$green100: #caf0e0;
+$green200: #86c4aa;
+$green300: #5aa687;
+$green400: #2d8963;
+$green500: #006b3f;
+$green600: #005632;
+$green700: #004026;
+$green800: #002b19;
+$green900: #002013;
+$greenBase: $green500;
+
+/**
+* Client lmdc green color
+*/
+$lmdc-green50: #f7ffe9;
+$lmdc-green100: #e9f5d2;
+$lmdc-green150: #dbfb9f;
+$lmdc-green200: #bdd68d;
+$lmdc-green300: #a0c25f;
+$lmdc-green400: #83ad31;
+$lmdc-green500: #669903;
+$lmdc-green600: #527a02;
+$lmdc-green700: #3d5c02;
+$lmdc-green800: #293d01;
+$lmdc-green900: #1f2e01;
+$lmdc-greenBase: $lmdc-green500;
+
+/**
+* Client lbnm blue color
+*/
+$lbnm-blue50: #e7f5ff;
+$lbnm-blue100: #d0ebff;
+$lbnm-blue150: #b6e0ff;
+$lbnm-blue200: #a1d7ff;
+$lbnm-blue300: #71c4ff;
+$lbnm-blue400: #42b0ff;
+$lbnm-blue500: #129cff;
+$lbnm-blue600: #0f7dcc;
+$lbnm-blue700: #0b5e99;
+$lbnm-blue800: #083e66;
+$lbnm-blue900: #062f4d;
+$lbnm-blueBase: $lbnm-blue500;
+
+/**
+* Client nmcb green color
+*/
+$nmcb-green50: #eefbfa;
+$nmcb-green100: #daf4f2;
+$nmcb-green150: #8dd8e4;
+$nmcb-green200: #c6ede9;
+$nmcb-green300: #9edfd8;
+$nmcb-green400: #77d0c7;
+$nmcb-green500: #27b4a5;
+$nmcb-green600: #1f9084;
+$nmcb-green700: #176c63;
+$nmcb-green800: #104842;
+$nmcb-green900: #0c3632;
+$nmcb-greenBase: $nmcb-green500;
+
+/**
+* Client mcm blue color
+*/
+$mcm-blue50: #ecf3ff;
+$mcm-blue100: #cddef9;
+$mcm-blue150: #b3cef7;
+$mcm-blue200: #b3cef7;
+$mcm-blue300: #9abef4;
+$mcm-blue400: #689dee;
+$mcm-blue500: #035ce3;
+$mcm-blue600: #024ab6;
+$mcm-blue700: #023788;
+$mcm-blue800: #01255b;
+$mcm-blue900: #011c44;
+$mcm-blueBase: $mcm-blue500;
+
+/**
+* Client Yellow color
+*/
+$yellow50: #fff9dc;
+$yellow100: #fff2b7;
+$yellow200: #feeb97;
+$yellow300: #fbe273;
+$yellow400: #e6cc57;
+$yellow500: #d1b328;
+$yellow600: #ba9a08;
+$yellow700: #a48701;
+$yellow800: #786200;
+$yellow900: #463900;
+$yellowBase: $yellow500;
+
+/**
+* Client Brown color
+*/
+$brown50: #f9f5ed;
+$brown100: #f3eadc;
+$brown200: #e4dac3;
+$brown300: #bba676;
+$brown400: #a78c50;
+$brown500: #92722a;
+$brown600: #8a682a;
+$brown700: #866348;
+$brown800: #6c4527;
+$brown900: #56371f;
+$brownBase: $brown500;

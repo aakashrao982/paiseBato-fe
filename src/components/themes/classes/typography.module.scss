@@ -1,0 +1,174 @@
+@use '../variables/typography.scss' as typography;
+@use '../variables/colors.scss' as colors;
+
+.commonTypography {
+  color: colors.$gray900;
+  font-family: typography.$fontFamilyInterRegular;
+  font-style: typography.$fontStyle;
+  letter-spacing: typography.$letterSpacing;
+}
+
+.displayLgLight,
+.displayLgRegular,
+.displayLgMedium,
+.displayLgSemibold,
+.displayLgBold {
+  @extend .commonTypography;
+  font-size: typography.$fontSizeDisplayLg;
+  line-height: typography.$lineHeightDisplayLg;
+}
+
+.displayMdLight,
+.displayMdRegular,
+.displayMdMedium,
+.displayMdSemibold,
+.displayMdBold {
+  @extend .commonTypography;
+  font-size: typography.$fontSizeDisplayMd;
+  line-height: typography.$lineHeightDisplayMd;
+}
+
+.displaySmLight,
+.displaySmRegular,
+.displaySmMedium,
+.displaySmSemibold,
+.displaySmBold {
+  @extend .commonTypography;
+  font-size: typography.$fontSizeDisplaySm;
+  line-height: typography.$lineHeightDisplaySm;
+}
+
+.textXlLight,
+.textXlRegular,
+.textXlMedium,
+.textXlSemibold,
+.textXlBold {
+  @extend .commonTypography;
+  font-size: typography.$fontSizeTextXl;
+  line-height: typography.$lineHeightTextXl;
+}
+
+.textLgLight,
+.textLgRegular,
+.textLgMedium,
+.textLgSemibold,
+.textLgBold {
+  @extend .commonTypography;
+  font-size: typography.$fontSizeTextLg;
+  line-height: typography.$lineHeightTextLg;
+}
+
+.textMdLgLight,
+.textMdLgRegular,
+.textMdLgMedium,
+.textMdLgSemibold,
+.textMdLgBold {
+  @extend .commonTypography;
+  font-size: typography.$fontSizeTextMdLg;
+  line-height: typography.$lineHeightTextMdLg;
+}
+
+.textMdLight,
+.textMdRegular,
+.textMdMedium,
+.textMdSemibold,
+.textMdBold {
+  @extend .commonTypography;
+  font-size: typography.$fontSizeTextMd;
+  line-height: typography.$lineHeightTextMd;
+}
+
+.textSmLight,
+.textSmRegular,
+.textSmMedium,
+.textSmSemibold,
+.textSmBold {
+  @extend .commonTypography;
+  font-size: typography.$fontSizeTextSm;
+  line-height: typography.$lineHeightTextSm;
+}
+
+.textXsLight,
+.textXsRegular,
+.textXsMedium,
+.textXsSemibold,
+.textXsBold {
+  @extend .commonTypography;
+  font-size: typography.$fontSizeTextXs;
+  line-height: typography.$lineHeightTextXs;
+}
+
+.textXsCapsLight,
+.textXsCapsRegular,
+.textXsCapsMedium,
+.textXsCapsSemibold,
+.textXsCapsBold {
+  @extend .commonTypography;
+  font-size: typography.$fontSizeTextXsCaps;
+  line-height: typography.$lineHeightTextXsCaps;
+}
+
+.displayLgLight,
+.displayMdLight,
+.displaySmLight,
+.textXlLight,
+.textLgLight,
+.textMdLgLight,
+.textMdLight,
+.textSmLight,
+.textXsLight,
+.textXsCapsLight {
+  font-weight: typography.$fontWeightLight;
+}
+
+.displayLgRegular,
+.displayMdRegular,
+.displaySmRegular,
+.textXlRegular,
+.textLgRegular,
+.textMdLgRegular,
+.textMdRegular,
+.textSmRegular,
+.textXsRegular,
+.textXsCapsRegular {
+  font-weight: typography.$fontWeightRegular;
+}
+
+.displayLgMedium,
+.displayMdMedium,
+.displaySmMedium,
+.textXlMedium,
+.textLgMedium,
+.textMdLgMedium,
+.textMdMedium,
+.textSmMedium,
+.textXsMedium,
+.textXsCapsMedium {
+  font-weight: typography.$fontWeightMedium;
+}
+
+.displayLgSemibold,
+.displayMdSemibold,
+.displaySmSemibold,
+.textXlSemibold,
+.textLgSemibold,
+.textMdLgSemibold,
+.textMdSemibold,
+.textSmSemibold,
+.textXsSemibold,
+.textXsCapsSemibold {
+  font-weight: typography.$fontWeightSemibold;
+}
+
+.displayLgBold,
+.displayMdBold,
+.displaySmBold,
+.textXlBold,
+.textLgBold,
+.textMdLgBold,
+.textMdBold,
+.textSmBold,
+.textXsBold,
+.textXsCapsBold {
+  font-weight: typography.$fontWeightBold;
+}
