@@ -73,7 +73,7 @@ export const SignUpForm = () => {
   return (
     <div className={styles.container}>
       <div className={styles.welcome}>
-        Welcome to Mayank and Aakash's project!
+        Welcome to Mayank and Aakash&apos;s project!
       </div>
       <div className={styles.form}>
         <Loader show={loadingPageChange || loadingRegister} />
