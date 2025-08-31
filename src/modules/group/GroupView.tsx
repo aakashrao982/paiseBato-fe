@@ -133,6 +133,7 @@ export default function GroupView({ groupId }: { groupId: string }) {
       setAmount("");
       setCategory("");
       refetchExpenses();
+      refetchBalances();
     }
   }, [createExpenseData, refetchExpenses]);
 
@@ -178,7 +179,10 @@ export default function GroupView({ groupId }: { groupId: string }) {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>Group #{groupId}</h1>
+      <h1 className={styles.heading}>
+        {" "}
+        {balancesData?.data?.groupName ?? "Name not available"}
+      </h1>
 
       {expensesError ? (
         <p className={styles.messageError}>{expensesError}</p>
