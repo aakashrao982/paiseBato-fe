@@ -6,6 +6,7 @@ import { BASE_URL } from "@/constants";
 import useFetch from "@/hooks/useFetch";
 import useMutation from "@/hooks/useMutation";
 import Loader from "@/components/loader";
+import { Button } from "@/components/button";
 
 type User = {
   id: number;
@@ -57,6 +58,47 @@ export default function GroupView({ groupId }: { groupId: string }) {
     error: expensesError,
     loading: loadingExpenses,
   } = useFetch<{ data: Expense[] }>(expensesUrl);
+
+  type UserBalance = {
+    userId: number;
+    userName: string;
+    userEmail: string;
+    balance: number;
+    balanceStatus: "OWES" | "OWED" | string;
+  };
+
+  type SuggestedSettlement = {
+    payerId: number;
+    payerName: string;
+    payerEmail: string;
+    receiverId: number;
+    receiverName: string;
+    receiverEmail: string;
+    amount: number;
+    description: string;
+  };
+
+  type GroupBalancesResponse = {
+    groupId: number;
+    groupName: string;
+    totalGroupExpenses: number;
+    userBalances: UserBalance[];
+    suggestedSettlements: SuggestedSettlement[];
+    totalTransactionsNeeded: number;
+    summary: string;
+    groupSettled: boolean;
+  };
+
+  const balancesUrl = useMemo(
+    () => `${BASE_URL}/api/expenses/balances/group/${groupId}`,
+    [groupId]
+  );
+  const {
+    fetch: refetchBalances,
+    data: balancesData,
+    error: balancesError,
+    loading: loadingBalances,
+  } = useFetch<{ data: GroupBalancesResponse }>(balancesUrl);
 
   const {
     mutateAsync: createExpense,
@@ -141,7 +183,56 @@ export default function GroupView({ groupId }: { groupId: string }) {
       {expensesError ? (
         <p className={styles.messageError}>{expensesError}</p>
       ) : null}
+      <div className={styles.section}>
+        <h2 className={styles.subheading}>Balances & Settlements</h2>
+        {balancesError ? (
+          <p className={styles.messageError}>{balancesError}</p>
+        ) : null}
+        <Loader show={loadingBalances} />
 
+        {balancesData?.data ? (
+          <div className={styles.card}>
+            <div className={styles.cardHeader}>
+              <h2 className={styles.cardTitle}>
+                {balancesData.data.groupName}
+              </h2>
+              <span className={styles.badge}>
+                {balancesData.data.groupSettled ? "Settled" : "Unsettled"}
+              </span>
+            </div>
+            <div className={styles.cardMeta}>
+              <span>Total: {balancesData.data.totalGroupExpenses}</span>
+              <span>
+                Transactions: {balancesData.data.totalTransactionsNeeded}
+              </span>
+            </div>
+
+            <div className={styles.splits}>
+              {(balancesData.data.userBalances || []).map((b) => (
+                <div key={b.userId} className={styles.splitRow}>
+                  <span>{b.userName}</span>
+                  <span>{b.balance}</span>
+                  <span>{b.balanceStatus}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className={styles.splits}>
+              {(balancesData.data.suggestedSettlements || []).map((s, idx) => (
+                <div key={idx} className={styles.splitRow}>
+                  <span>
+                    {s.payerName}  {s.receiverName}
+                  </span>
+                  <span>{s.amount}</span>
+                  <span>{s.description}</span>
+                </div>
+              ))}
+            </div>
+
+            <p className={styles.messageInfo}>{balancesData.data.summary}</p>
+          </div>
+        ) : null}
+      </div>
       <Loader show={loadingExpenses} />
 
       <div className={styles.list}>
@@ -211,14 +302,12 @@ export default function GroupView({ groupId }: { groupId: string }) {
               placeholder="Accommodation"
             />
           </div>
-          <button
-            type="button"
-            className={styles.submitButton}
+          <Button
             onClick={handleCreateExpense}
             disabled={creatingExpense}
-          >
-            {creatingExpense ? "Creating..." : "Create Expense"}
-          </button>
+            text={creatingExpense ? "Creating..." : "Create Expense"}
+            className={styles.submitButton}
+          />
         </div>
       </div>
 
@@ -237,14 +326,12 @@ export default function GroupView({ groupId }: { groupId: string }) {
               placeholder="mayank@gmail.com"
             />
           </div>
-          <button
-            type="button"
-            className={styles.submitButton}
+          <Button
             onClick={handleAddMember}
             disabled={addingMember}
-          >
-            {addingMember ? "Adding..." : "Add Member"}
-          </button>
+            text={addingMember ? "Adding..." : "Add Member"}
+            className={styles.submitButton}
+          />
         </div>
       </div>
     </div>

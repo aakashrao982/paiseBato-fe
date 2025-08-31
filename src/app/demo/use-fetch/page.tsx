@@ -2,6 +2,7 @@
 
 import useFetch from "@/hooks/useFetch";
 import Loader from "@/components/loader";
+import { Button } from "@/components/button";
 
 export default function Page() {
   const {
@@ -24,20 +25,9 @@ export default function Page() {
       <h1 style={{ fontSize: 20, fontWeight: 600, marginBottom: 12 }}>
         useFetch demo
       </h1>
-      <button
-        onClick={refetch}
-        style={{
-          padding: "8px 12px",
-          borderRadius: 6,
-          background: "#000",
-          color: "#fff",
-          border: "none",
-          cursor: "pointer",
-          marginBottom: 12,
-        }}
-      >
-        Refetch
-      </button>
+      <div style={{ marginBottom: 12 }}>
+        <Button onClick={refetch} text="Refetch" />
+      </div>
       <Loader show={loading} />
       {error && (
         <p style={{ color: "#dc2626", marginBottom: 12 }}>Error: {error}</p>

@@ -6,6 +6,7 @@ import { BASE_URL } from "@/constants";
 import useFetch from "@/hooks/useFetch";
 import useMutation from "@/hooks/useMutation";
 import Loader from "@/components/loader";
+import { Button } from "@/components/button";
 
 type GroupMemberUser = {
   id: number;
@@ -158,14 +159,12 @@ export default function HomeView() {
               placeholder="Travel"
             />
           </div>
-          <button
-            type="button"
-            className={styles.submitButton}
+          <Button
             onClick={handleCreateGroup}
             disabled={creatingGroup}
-          >
-            {creatingGroup ? "Creating..." : "Create Group"}
-          </button>
+            text={creatingGroup ? "Creating..." : "Create Group"}
+            className={styles.submitButton}
+          />
         </div>
       </div>
     </div>

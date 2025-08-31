@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { Button } from "@/components/button";
 import { useAuth } from "@/context/AuthContext";
 import { PAGE_URLS } from "@/constants";
 import useLoadingRouter from "@/hooks/useLoadingRouter";
@@ -56,24 +57,9 @@ export default function Page() {
           />
         </div>
       </div>
-      <button
-        type="button"
-        onClick={handleLogout}
-        style={{
-          marginTop: 16,
-          display: "inline-flex",
-          alignItems: "center",
-          justifyContent: "center",
-          borderRadius: 6,
-          background: "#000",
-          color: "#fff",
-          padding: "8px 12px",
-          fontSize: 14,
-          fontWeight: 500,
-        }}
-      >
-        Log out
-      </button>
+      <div style={{ marginTop: 16 }}>
+        <Button onClick={handleLogout} text="Log out" />
+      </div>
     </div>
   );
 }
